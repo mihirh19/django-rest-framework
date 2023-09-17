@@ -96,6 +96,15 @@ DATABASES = {
         "PORT" : os.environ.get("PORT"),
     }
 }
+# DATABASES = {
+#         'default': {
+#             'ENGINE': 'djongo',
+#             'NAME': os.environ.get("MONGO_DB"),
+#             'CLIENT': {
+#                 'host': os.environ.get("MONGO_URI")
+#             }  
+#         }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

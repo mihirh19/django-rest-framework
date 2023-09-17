@@ -2,10 +2,10 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-import dotenv
+import environ
 
 def main():
-    dotenv.load_dotenv()
+    environ.Env.read_env()
     """Run administrative tasks."""
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cfehome.settings")
     try:
